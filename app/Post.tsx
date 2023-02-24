@@ -25,11 +25,7 @@ export default function Post({ id, name, avatar, postTitle, comments }: any) {
         <p className='break-all'>{postTitle}</p>
       </div>
       <div className='flex gap-4 cursor-pointer items-center'>
-        <Link
-          href={{
-            pathname: `/post/${id}`,
-          }}
-        >
+        <Link href={`/post/${id}`}>
           <p className=' text-sm font-bold text-gray-700'>
             {comments?.length} Comments
           </p>
