@@ -17,7 +17,7 @@ export default function Home() {
     queryFn: allPosts,
     queryKey: ['posts'],
   });
-  if (error) return error;
+  if (error) return 'Ops! Something went wrong.';
   if (isLoading) return 'Loading.....';
 
   return (
